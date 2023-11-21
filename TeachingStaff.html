@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US" class>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Educators</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .header {
+                background-color: #ebdc0c;
+                color: #fff;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+            }
+    
+            .logo {
+                width: 200px;
+                width: 80px;
+                display: block;
+                float: left;
+            }
+
+    
+            .nav a {
+                color: #fff; /* Change button text color to white */
+                text-decoration: none;
+                margin: 0 10px; /* Add spacing between buttons */
+            }
+    
+            .dropdown {
+                /* Add styles for the dropdown menu here */
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #333;
+                min-width: 160px;
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+
+        .educators-section {
+            Background-color: #ffffff;
+            Text-align: center;
+            Padding: 50px;
+        }
+
+        .educators-title {
+            Font-size: 50px;
+            Font-weight: bold;
+            Margin-bottom: 20px;
+        }
+
+        .edcators-table{
+            width: 100%;
+        }
+
+        .edcators-table td, th {
+            border: 1px solid black;
+            Padding: 20px;
+            Text-align: center;
+            padding: 10px;
+        }
+
+        .educators-head {
+            Margin-bottom: 20px;
+            Text-align: center;
+            Border: 1px solid #ccc;
+            Padding: 20px;
+            Background-color: #f7f0f0;
+            align-items: center;
+            color: #000000;
+        }
+
+        .educators-item {
+            Flex-basis: calc(25% - -50px); /* Three items per row with spacing */
+            Margin-bottom: 20px;
+            Text-align: center;
+            Border: 1px solid #ccc;
+            Padding: 20px;
+            Background-color: #f9f9f9;
+        }
+
+        .educators-image {
+            Max-width: 100%;
+            Height: auto;
+            Margin-bottom: 10px;
+        }
+
+        
+
+        .educators-item-title {
+            Font-size: 18px;
+            Font-weight: bold;
+            Margin-top: 10px;
+        }
+
+        .educators-item-description {
+            Font-size: 16px;
+            Margin-top: 10px;
+        }
+
+        .footer {
+            Background-color: #0eaaaa;
+            Color: #fff;
+            Padding: 20px;
+            Text-align: center;
+        }
+
+        .footer-row {
+            Display: flex;
+            Justify-content: space-between;
+            Align-items: center;
+            Flex-wrap: wrap;
+        }
+
+        .footer-column {
+            Flex-basis: calc(33.33% - 20px);
+            Margin-bottom: 20px;
+            Text-align: left;
+        }
+
+        .footer-icon {
+            Font-size: 24px;
+            Margin-right: 10px;
+        }
+
+        .footer-button {
+            Background-color: #f3bd09;
+            Color: #333;
+            Padding: 1% 40%;
+            Border: none;
+            Cursor: pointer;
+            Font-size: 18px;
+            Text-decoration: none;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/ba49b267df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="Images/logo2.png" alt="Your Logo" class="logo" >
+        <h2>Mirando Ongalo Mixed Sec School</h2>
+        <nav class="nav">
+            <a href="Index.html">Home</a>
+            <a href="TeachingStaff.html">Teaching Staff</a>
+            <a href="academics.html">Academics</a>
+            <div class="dropdown">
+                <button class="dropbtn">Department</button>
+                <div class="dropdown-content">
+                    <a href="Library.html">Library Dep</a>
+                    <a href="Science.html">Sciences Dep</a>
+                    <a href="Langauges.html">Langauges Dep</a>
+                    <a href="Kiswahili.html">Idara ya Kiswahili</a>
+                    <a href="Academics.html">Academics Dep</a>
+                    <a href="Games.html">Games & Sports</a>
+                </div>
+            </div>
+            <a href="blog.html" class="blog-link">Blog</a>
+        </nav>
+    </div>
+    <div class="educators-section">
+        <div class="Educators-title"><hr><strong><h1>Educators</h1></strong></div><hr>
+        <div class="educators-head">
+            <img src="Images/Aloyce1-fotor-20230922181954.png" alt="Educator1" class="educators-image">
+            <div class="educators-item-title"><strong>Mr. Frankline Oriwo</strong></div>
+            <div class="educators-item-description">
+                <strong>Chief Principal</strong>
+            </div>
+            <table class="edcators-table">
+                <tr>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mr. Patrick Opiyo</strong></div>
+                        <div class="educators-item-description">
+                          <strong>Deputy Principal <br> Maths & Chem</strong>
+                        </div>    
+                    </td>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mr. Patrick Demesi</strong></div>
+                        <div class="educators-item-description">
+                          <strong>DOS <br> Kis & Geo</strong>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mrs. Anjelica Oyieke</strong></div>
+                        <div class="educators-item-description">
+                          <strong>Chem & Bio</strong>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mr. David Okuto</strong></div>
+                        <div class="educators-item-description">
+                          <strong>Maths & Phic</strong>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mr. Agripa Okeyo</strong></div>
+                        <div class="educators-item-description">
+                          <strong>History & Business</strong>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="Images/princ2-fotor-20230922181759.png" alt="Educator1" class="educators-image">
+                        <div class="educators-item-title"><strong>Mr. Fredrick Abuoga</strong></div>
+                        <div class="educators-item-description">
+                          <strong>English Lit</strong>
+                        </div>
+                    </td>
+                </tr>
+            </table>    
+        
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                 <h2 class="footer-item">About Us</h2>
+                <p>School motto and vision.</p>
+            </div> 
+            <div class="footer-column">
+                <h2 class="footer-item">Contact</h2>
+                <p>Explore the school website.</p>
+                <p>Wishing students to join for academic excellence.</p>
+                <i class="fa-solid fa-phone"></i> 0719593973 <br>
+                <i class="fa-solid fa-clock"></i> Office Working Hours 8am - 4pm (Mon - Fri)<br>
+                <i class="fa-solid fa-message"></i> www.mirandoschool.sc.ke<br>
+                <i class="fa-solid fa-location-dot"></i> P.O. Box, 1234 Bondo<br>
+            </div> 
+            <div class="footer-column">
+                <h2 class="footer-item">Department</h2>
+                <i class="fa-solid fa-check"></i> Library Dep. 
+                <hr>
+                <i class="fa-solid fa-check"></i> Sciences Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Langauges Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Idara ya Kiswahili.
+                <hr>
+                <i class="fa-solid fa-check"></i> Academics Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Games & Sports Dep.
+                <hr>
+            </div>
+        </div> 
+        <small>&copy;2023 MIRANDO HIGH SCHOOL</small><br>
+        <button class="footer-button">
+            <i class="fa-solid fa-envelope"></i> Emails
+        </button>
+    </div>
+</body>
+</html>

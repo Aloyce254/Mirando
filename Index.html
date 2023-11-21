@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-US" class>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1">
+        <title>MIRANDO HIGH SCHOOL</title>
+        <style>
+            .header {
+                background-color: #ebdc0c;
+                color: #fff;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+            }
+
+            .logo {
+                width: 200px;
+                width: 80px;
+                display: block;
+                float: left;
+            }
+    
+            .nav {
+                color: #da0606a8;
+            }
+    
+            .nav a {
+                color: #fff; /* Change button text color to white */
+                text-decoration: none;
+                margin: 0 10px; /* Add spacing between buttons */
+            }
+    
+            .dropdown {
+                /* Add styles for the dropdown menu here */
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #333;
+                min-width: 160px;
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            .content{
+                background-image:url(Images/Home1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 500px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .project-text{
+                font-family: Arial, Helvetica, sans-serif, garamond, serif;
+                font-size: 30px;
+                color: #f3f8f4;
+                margin-bottom: 20px;
+            }
+
+            .button{
+                background-color: transparent;
+                color: #f8f5f5;
+                border: 2px solid #fffdfd;
+                padding: 10px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+                transition: backgrounda-color 0.3s, color 0,3s;
+            }
+
+            .button:hover{
+                background-color: #000;
+                color: #fff;
+            }
+
+            .button-container{
+                text-align: center;
+            }
+            .school-section{
+                background-color: #a00c0c;
+                text-align: center;
+                padding: 50px;
+            }
+            .school-name{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            .school-description{
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            .principal-section{
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 50px;
+            }
+
+            .principal-image{
+                max-width: 100%;
+                height: auto;
+            }
+
+            .principal-name{
+                font-size: 24px;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+
+            .principal-info{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .principal-paragraphs{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .principal-stats{
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+                text-align: center;
+                width: 100%;
+            }
+
+              /* Add styles for the news section */
+        .news-section {
+            Background-color: #cfb2b2;
+            Text-align: center;
+            Padding: 50px;
+        }
+
+        .news-title {
+            Font-size: 24px;
+            Font-weight: bold;
+            Margin-bottom: 20px;
+        }
+
+        .news-table {
+            Display: flex;
+            flex-wrap: wrap;
+            Justify-content: space-between;
+        }
+
+        .news-item {
+            Flex-basis: calc(25% - -50px); /* Three items per row with spacing */
+            Margin-bottom: 20px;
+            Text-align: left;
+            Border: 1px solid #ccc;
+            Padding: 20px;
+            Background-color: #f9f9f9;
+        }
+
+        .news-image {
+            Max-width: 100%;
+            Height: auto;
+            Margin-bottom: 10px;
+        }
+
+        .news-item-title {
+            Font-size: 18px;
+            Font-weight: bold;
+            Margin-top: 10px;
+        }
+
+        .news-item-description {
+            Font-size: 16px;
+            Margin-top: 10px;
+        }
+
+         /* Styles for the footer section */
+         .footer {
+            Background-color: #0eaaaa;
+            Color: #fff;
+            Padding: 20px;
+            Text-align: center;
+        }
+
+        .footer-row {
+            Display: flex;
+            Justify-content: space-between;
+            Align-items: center;
+            Flex-wrap: wrap;
+        }
+
+        .footer-column {
+            Flex-basis: calc(33.33% - 20px);
+            Margin-bottom: 20px;
+            Text-align: left;
+        }
+
+        .footer-icon {
+            Font-size: 24px;
+            Margin-right: 10px;
+        }
+
+        .footer-button {
+            Background-color: #f3bd09;
+            Color: #333;
+            Padding: 1% 40%;
+            Border: none;
+            Cursor: pointer;
+            Font-size: 18px;
+            Text-decoration: none;
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/ba49b267df.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img src="Images/logo2.png" alt="Your Logo" class="logo">
+            <h2>Mirando Ongalo Mixed Sec School</h2>
+            
+            <nav class="nav">
+                <a href="Index.html">Home</a>
+                <a href="TeachingStaff.html">Teaching Staff</a>
+                <a href="academics.html">Academics</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Department</button>
+                    <div class="dropdown-content">
+                        <a href="Library.html">Library Dep</a>
+                        <a href="Science.html">Sciences Dep</a>
+                        <a href="Langauges.html">Langauges Dep</a>
+                        <a href="Kiswahili.html">Idara ya Kiswahili</a>
+                        <a href="Academics.html">Academics Dep</a>
+                        <a href="Games.html">Games & Sports</a>
+
+                    </div>
+                </div>
+                <a href="blog.html" class="blog-link">Blog</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="project-text">
+                <strong>Mirando Ongalo Mixed Sec School <br>Education Empowers</strong>
+            </div>
+            <div class="button-container">
+                <a href="contact.html" class="button">Contact Now</a>
+            </div>
+            
+        </div>
+        <div class="school-section">
+            <div class="school-name">
+                <hr>Mirando Ongalo High School<hr>
+            </div>
+            <p class="school-description">
+                Mirando Ongalo Sec School is prestigious institute with a rich history and a commitment to excellence in education. Founded in the year[Year], our school has been a beacon of learning and innovation in the Uyoma area for generations.
+            </p>
+            <p class="school-description">
+                Our school is located in the heart of West Uyoma Location, providing students with a picturesque environment for there educational journey. With state-of-the-art facilitates and dedicated educators, we strive to nurture the intellectual and personal growth of every student.
+            </p>
+        </div>
+        <div class="principal-section">
+            <table>
+                <tr>
+                    <td rowspan="2" style="background-color: #f3bd09;">
+                        <img src="Images/princ.jpg" alt="Mr. Frankline Oriwo" class="principal-image">
+                            <div class="principal-name">
+                                Mr. Frankline Oriwo <br> Chief Principal
+                            </div>
+                    </td>
+                    <td colspan="3" style="background-color: blue;">
+                        <div class="principal-paragraphs">
+                            <p>
+                                Mr. Frankline Oriwo is a dedicated and experienced educator who has been a driving force in the academic success of Mirando Ongalo Sec School. With a passion for empowering students and commitment to excellence , he has played a pivotal role in shaping the future of our school.
+                            </p>
+                            <p>
+                                As Chief Principal, Mr. Oriwo brings a wealth of knowledge and leadership to our institution. His vision for a dynamic and innovative learning environment has propelled Mirando to new heights of achievement.
+                            </p>
+                        </div>
+                    </td>
+                    <tr>
+                     <div class="principal-stats">
+                        <td style="background-color: rgb(208, 211, 209);">
+                            <div><strong>Years of Experience </div><br>
+                            <div>16</div></strong>
+                        </td>
+                        <td style="background-color: rgb(208, 211, 209);">
+                            <div><strong>Direct University Entey</div><br>
+                            <div>109</div></strong>
+                        </td>
+                        <td style="background-color: rgb(208, 211, 209); ">
+                            <div><strong>Straight As</div><br>
+                            <div>54</div></strong>
+                        </td>
+                      </div> 
+                    </tr>
+                </tr>
+            </table>  
+        </div>
+        <div class="news-section">
+            
+            <div class="news-title"><hr>Our Latest News<hr></div>
+            <div class="news-table">
+                <table border="1">
+                    <tr>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/Games1-fotor-20230922182912.png" alt="Games">
+                                <div class="news-item-title">Games</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/bookshelves-932780_1280-fotor-20230922183043.png" alt="Academics">
+                                <div class="news-item-title">Academics</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/technology-6230073_1280-fotor-20230922182328.png" alt="ICT Projects">
+                                <div class="news-item-title">ICT Projects</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/fruit-8160703_1280-fotor-20230922182750.png" alt="Agriculture">
+                                <div class="news-item-title">Agriculture</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/magnetism-4821353_1280-fotor-2023092218256.png" alt="Physics">
+                                <div class="news-item-title">Physics</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="news-item">
+                                <img src="Images/censorship-610101_1280-fotor-20230922182946.png" alt="Performance">
+                                <div class="news-item-title">Performance</div>
+                                <div class="news-item-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nulla nec justo bibendum auctor in id ex.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>               
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-column">
+                     <h2 class="footer-item">About Us</h2>
+                    <p>School motto and vision.</p>
+                </div> 
+                <div class="footer-column">
+                    <h2 class="footer-item">Contact</h2>
+                    <p>Explore the school website.</p>
+                    <p>Wishing students to join for academic excellence.</p>
+                    <i class="fa-solid fa-phone"></i> 0719593973 <br>
+                    <i class="fa-solid fa-clock"></i> Office Working Hours 8am - 4pm (Mon - Fri)<br>
+                    <i class="fa-solid fa-message"></i> www.mirandoschool.sc.ke<br>
+                    <i class="fa-solid fa-location-dot"></i> P.O. Box, 1234 Bondo<br>
+                </div> 
+                <div class="footer-column">
+                    <h2 class="footer-item">Department</h2>
+                    <i class="fa-solid fa-check"></i> Library Dep. 
+                    <hr>
+                    <i class="fa-solid fa-check"></i> Sciences Dep.
+                    <hr>
+                    <i class="fa-solid fa-check"></i> Langauges Dep.
+                    <hr>
+                    <i class="fa-solid fa-check"></i> Idara ya Kiswahili.
+                    <hr>
+                    <i class="fa-solid fa-check"></i> Academics Dep.
+                    <hr>
+                    <i class="fa-solid fa-check"></i> Games & Sports Dep.
+                    <hr>
+                </div>
+            </div> 
+            <small>&copy;2023 MIRANDO HIGH SCHOOL</small><br>
+            <button class="footer-button">
+                <i class="fa-solid fa-envelope"></i> Emails
+            </button>
+        </div>
+    </body>
+    </html>
+</html>

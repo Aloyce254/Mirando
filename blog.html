@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US" class>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Academics</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .header {
+                background-color: #ebdc0c;
+                color: #fff;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+        }
+
+        .logo {
+                width: 200px;
+                width: 80px;
+                display: block;
+                float: left;
+        }
+    
+        .nav a {
+                color: #fff; /* Change button text color to white */
+                text-decoration: none;
+                margin: 0 10px; /* Add spacing between buttons */
+        }
+    
+        .dropdown {
+                /* Add styles for the dropdown menu here */
+                position: relative;
+                display: inline-block;
+        }
+
+        .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #333;
+                min-width: 160px;
+                z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content{
+                display: block;
+        }
+
+        .blog-section {
+            Background-color: #fff;
+            Padding: 50px;
+            Text-align: center;
+        }
+
+        .blog-link {
+            Text-decoration: none; /* Remove underlines from links */
+            Color: #000; /* Set link color */
+        }
+
+        .blog-table{
+            width: 100%;
+        }
+
+        .blog-table td {
+            border: #333;
+            Padding: 20px;
+            Text-align: center;
+        }
+
+        .blog-image {
+            Max-width: 100%;
+            Height: auto;
+            Margin-bottom: 10px;
+        }
+
+        .blog-title {
+            Font-size: 18px;
+            Font-weight: bold;
+        }
+
+        .blog-author {
+            Font-size: 14px;
+            Color: #777; /* Set author info color */
+        }
+
+        .footer {
+            Background-color: #0eaa83;
+            Color: #fff;
+            Padding: 20px;
+            Text-align: center;
+        }
+
+        .footer-row {
+            Display: flex;
+            Justify-content: space-between;
+            Align-items: center;
+            Flex-wrap: wrap;
+        }
+
+        .footer-column {
+            Flex-basis: calc(33.33% - 20px);
+            Margin-bottom: 20px;
+            Text-align: left;
+        }
+
+        .footer-icon {
+            Font-size: 24px;
+            Margin-right: 10px;
+        }
+
+        .footer-button {
+            Background-color: #f3bd09;
+            Color: #333;
+            Padding: 1% 40%;
+            Border: none;
+            Cursor: pointer;
+            Font-size: 18px;
+            Text-decoration: none;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/ba49b267df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="Images/logo2.png" alt="Your Logo" class="logo">
+        <h2>Mirando Ongalo Mixed Sec School</h2>
+        <nav class="nav">
+            <a href="Index.html">Home</a>
+            <a href="TeachingStaff.html">Teaching Staff</a>
+            <a href="academics.html">Academics</a>
+            <div class="dropdown">
+                <button class="dropbtn">Department</button>
+                <div class="dropdown-content">
+                    <a href="Library.html">Library Dep</a>
+                    <a href="Science.html">Sciences Dep</a>
+                    <a href="Langauges.html">Langauges Dep</a>
+                    <a href="Kiswahili.html">Idara ya Kiswahili</a>
+                    <a href="Academics.html">Academics Dep</a>
+                    <a href="Games.html">Games & Sports</a>
+                </div>
+            </div>
+            <a href="blog.html" class="blog-link">Blog</a>
+        </nav>
+    </div>
+    <!—Blog section 
+    <div class="blog-section">
+        <hr><h1 style="text-align: center;">Blog</h1><hr>
+        <table border="1" class="blog-table">
+            <tr>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Career Planning" class="blog-image">
+                        <div class="blog-title">Career Planning</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Success Stories" class="blog-image">
+                        <div class="blog-title">Success Stories</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Mirando has Standards" class="blog-image">
+                        <div class="blog-title">Mirando has Standards</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Strategies for Success" class="blog-image">
+                        <div class="blog-title">Strategies for Success</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Student Life at Mirando" class="blog-image">
+                        <div class="blog-title">Student Life at Mirando</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Blog Post 7" class="blog-image">
+                        <div class="blog-title">Blog Post 7</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Blog Post 8" class="blog-image">
+                        <div class="blog-title">Blog Post 8</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Blog Post 9" class="blog-image">
+                        <div class="blog-title">Blog Post 9</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+                <td>
+                    <a href="#" class="blog-link">
+                        <img src="images/Games1-fotor-20230922182912.png" alt="Blog Post 9" class="blog-image">
+                        <div class="blog-title">Blog Post 9</div>
+                    </a>
+                    <div class="blog-author">By Mirando | Date</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+   
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                 <h2 class="footer-item">About Us</h2>
+                <p>School motto and vision.</p>
+            </div> 
+            <div class="footer-column">
+                <h2 class="footer-item">Contact</h2>
+                <p>Explore the school website.</p>
+                <p>Wishing students to join for academic excellence.</p>
+                <i class="fa-solid fa-phone"></i> 0719593973 <br>
+                <i class="fa-solid fa-clock"></i> Office Working Hours 8am - 4pm (Mon - Fri)<br>
+                <i class="fa-solid fa-message"></i> www.mirandoschool.sc.ke<br>
+                <i class="fa-solid fa-location-dot"></i> P.O. Box, 1234 Bondo<br>
+            </div> 
+            <div class="footer-column">
+                <h2 class="footer-item">Department</h2>
+                <i class="fa-solid fa-check"></i> Library Dep. 
+                <hr>
+                <i class="fa-solid fa-check"></i> Sciences Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Langauges Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Idara ya Kiswahili.
+                <hr>
+                <i class="fa-solid fa-check"></i> Academics Dep.
+                <hr>
+                <i class="fa-solid fa-check"></i> Games & Sports Dep.
+                <hr>
+            </div>
+        </div> 
+        <small>&copy;2023 MIRANDO HIGH SCHOOL</small><br>
+        <button class="footer-button">
+            <i class="fa-solid fa-envelope"></i> Emails
+        </button>
+    </div>
+</body>
+</html>
